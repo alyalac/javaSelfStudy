@@ -1,4 +1,4 @@
-package Activity;
+package activity;
 
 //Widening Casting with Narrow Casting
 // POINT OF SALE

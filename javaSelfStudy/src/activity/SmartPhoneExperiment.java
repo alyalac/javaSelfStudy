@@ -1,8 +1,7 @@
 package activity;
 
 
-
-public class SmartPhone {
+public class SmartPhoneExperiment {
 
     String brand;
     int batteryLevel;
@@ -10,7 +9,7 @@ public class SmartPhone {
     int batteryLow; 
     
 
-    public SmartPhone(String brand, int batteryLevel, int negative, int batteryLow ){
+    public SmartPhoneExperiment(String brand, int batteryLevel, int negative, int batteryLow ){
     
         this.brand = brand;
         this.batteryLevel = batteryLevel;
@@ -45,18 +44,13 @@ public static void main(String[] args) {
 
    
 
-    SmartPhone myPhone = new  SmartPhone("Oppo",100, 40, 0);
+    SmartPhoneExperiment myPhone = new  SmartPhoneExperiment("Oppo",100, 40, 0);
     
     myPhone.appUse();
     myPhone.Output();
    
 
     
-
-    
-
-
-
     
 }
 

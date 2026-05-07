@@ -1,13 +1,13 @@
-package javaStudy;
+package activity;
 
-public class EncapsulationOc {
+public class EncapsulationSetOnly {
 
  private String studentName;
  private int idNumber;
 
 
 
- EncapsulationOc(){
+ EncapsulationSetOnly(){
    this.studentName = "";
    this.idNumber = 0;
 
@@ -50,13 +50,17 @@ public class EncapsulationOc {
     public static void main(String[]args){
      
     
-        EncapsulationOc sp = new  EncapsulationOc();
+        EncapsulationSetOnly sp = new  EncapsulationSetOnly();
 
-        //setter only - setStudentName
+        //setter - setStudentName
         sp.setStudentName("Andrei");
 
-        //setter only - setIdNumber
+        //setter - setIdNumber
         sp.setIdNumber(26393);
+
+
+        
+
 
         
         sp.mainOutput();

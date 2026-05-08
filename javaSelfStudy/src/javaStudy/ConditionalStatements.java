@@ -13,12 +13,13 @@ public class ConditionalStatements {
 
   public static void ifElse() { // IF-ELSE Statement
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in); // Scanner
 
-    System.out.println("Enter your age:  ");
+    System.out.print("Enter your age:"); // sc
     int age = sc.nextInt();
 
-    if (age >= 18) {
+    int legalAge = 18;
+    if (age >= legalAge) {
       System.out.print("\nWell Done\n");
     } else {
       System.out.print("18+ Only\n");
@@ -36,11 +37,35 @@ public class ConditionalStatements {
     }
   }
 
+  public static void moreConditionalExpressions() { // if - elseif - else statement
+
+    System.out.println("Option: Orange,Red,Blue");
+
+    Scanner sc = new Scanner(System.in);
+
+    String myFavoriteColor = "Blue";
+    System.out.print("Guess my favorite color:");
+    String guess = sc.nextLine();
+
+    if (guess.equals(myFavoriteColor)) {
+      System.out.println("Goods");
+    } else if (guess.equals("Orange")) {
+      System.out.println("Ngek!");
+    } else if (guess.equals("Red")) {
+      System.out.println("Wrong!");
+    } else {
+      System.out.println("Out");
+    }
+
+  }
+
   public static void main(String[] args) {
 
     ifElse();
 
     booleanIfElse();
+
+    moreConditionalExpressions();
 
   }
 

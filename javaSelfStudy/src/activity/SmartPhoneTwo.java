@@ -1,23 +1,23 @@
 package activity;
 
 public class SmartPhoneTwo {
-    
+
     String brand;
     String model;
     int maxBatteryLevel;
     int batteryLevel;
-    int drainAmount; 
+    int drainAmount;
 
-    public SmartPhoneTwo (String brand, String model,int maxBatteryLevel, int batteryLevel) {
+    public SmartPhoneTwo(String brand, String model, int maxBatteryLevel, int batteryLevel) {
         this.brand = brand;
         this.model = model;
         this.maxBatteryLevel = maxBatteryLevel;
         this.batteryLevel = batteryLevel;
-        this.drainAmount = 0; 
+        this.drainAmount = 0;
     }
 
     public void useApp(int drainAmount) {
-        this.drainAmount = drainAmount; 
+        this.drainAmount = drainAmount;
         batteryLevel -= drainAmount;
         if (batteryLevel < 0) {
             batteryLevel = 0;
@@ -33,8 +33,8 @@ public class SmartPhoneTwo {
     }
 
     public static void main(String[] args) {
-        SmartPhoneTwo outKo = new SmartPhoneTwo("Vivo", "Y16",100, 100);
-        SmartPhoneTwo outKoTwo = new SmartPhoneTwo("Nokia", "ARK800",100, 100);
+        SmartPhoneTwo outKo = new SmartPhoneTwo("Vivo", "Y16", 100, 100);
+        SmartPhoneTwo outKoTwo = new SmartPhoneTwo("Nokia", "ARK800", 100, 100);
 
         outKo.useApp(10);
         outKoTwo.useApp(30);

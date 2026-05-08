@@ -7,54 +7,41 @@
 
 package javaStudy;
 
+import java.util.Scanner;
 
 public class ConditionalStatements {
 
-    
-   
+  public static void ifElse() { // IF-ELSE Statement
 
+    Scanner sc = new Scanner(System.in);
 
+    System.out.println("Enter your age:  ");
+    int age = sc.nextInt();
 
-    public static void ifElse(){
-     
-        int age = 16;
-     
-   if(age >= 18){
-    System.out.print("\nWell Done\n");
-   }
-   else{
-     System.out.print("18+ Only\n");
-   }
+    if (age >= 18) {
+      System.out.print("\nWell Done\n");
+    } else {
+      System.out.print("18+ Only\n");
     }
+  }
 
-
-
-
-   public static void booleanIfElse(){
+  public static void booleanIfElse() {
 
     boolean loyalty = true;
 
-     if(loyalty) {
-       System.out.println("\nLoyalty: " + true);
-     }
+    if (loyalty) {
+      System.out.println("\nLoyalty: " + true);
+    } else {
+      System.out.println("Loyalty" + true);
+    }
+  }
 
-     else{
-            System.out.println("Loyalty" + true);
-       }
-    } 
+  public static void main(String[] args) {
 
+    ifElse();
 
-
-
-  public static void main(String[]args){
-   
-
-      ifElse();
-
-      booleanIfElse();
-    
-
+    booleanIfElse();
 
   }
 
-   }
+}

@@ -11,22 +11,43 @@ import java.util.Scanner;
 
 public class ConditionalStatements {
 
-  public static void ifElse() { // IF-ELSE Statement
+  public static void nestedCondition() {
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Enter your age:");
+    int age = sc.nextInt();
+
+    boolean isVerified = false; // or False you have access but not qualified
+
+    if (age >= 18) {
+      System.out.println("You have Access");
+      if (isVerified) {
+        System.out.println("Qualified");
+      } else {
+        System.out.println("Not Qualified");
+      }
+    }
+
+  }
+
+  public static void ifElse() { // if-else if-else Statement
 
     Scanner sc = new Scanner(System.in); // Scanner
 
     System.out.print("Enter your age:"); // sc
-    int age = sc.nextInt();
+    int legalAge = sc.nextInt();
 
-    int legalAge = 18;
-    if (age >= legalAge) {
-      System.out.print("\nWell Done\n");
+    if (legalAge >= 18) {
+      System.out.print("You Have Access");
+    } else if (legalAge >= 13) {
+      System.out.print("You Need Parent Consent");
     } else {
-      System.out.print("18+ Only\n");
+      System.out.println("Access Denied!");
     }
   }
 
-  public static void booleanIfElse() {
+  public static void booleanIfElse() { // else if
 
     boolean loyalty = true;
 
@@ -60,6 +81,8 @@ public class ConditionalStatements {
   }
 
   public static void main(String[] args) {
+
+    nestedCondition();
 
     ifElse();
 

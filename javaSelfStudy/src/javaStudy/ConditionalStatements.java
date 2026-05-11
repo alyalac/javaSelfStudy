@@ -11,6 +11,35 @@ import java.util.Scanner;
 
 public class ConditionalStatements {
 
+  public static void andLogical() {
+
+    boolean myHeart = true;
+    boolean mySoul = true;
+
+    if (myHeart && mySoul) {
+      System.out.println("HUMAN");
+    } else {
+      System.out.println("OUTTT");
+    }
+
+  }
+
+  public static void compareString() {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.print("6..??");
+    int sixseven = sc.nextInt();
+
+    if (sixseven == 7) {
+      System.out.println("67676767!!");
+    } else if (sixseven == 67) {
+      System.out.println("67!!!!");
+    } else {
+      System.out.println("OH noo!!");
+    }
+
+  }
+
   public static void nestedCondition() {
 
     Scanner sc = new Scanner(System.in);
@@ -18,7 +47,7 @@ public class ConditionalStatements {
     System.out.print("Enter your age:");
     int age = sc.nextInt();
 
-    boolean isVerified = false; // or False you have access but not qualified
+    boolean isVerified = true; // or False you have access but not qualified
 
     if (age >= 18) {
       System.out.println("You have Access");
@@ -81,6 +110,10 @@ public class ConditionalStatements {
   }
 
   public static void main(String[] args) {
+
+    andLogical();
+
+    compareString();
 
     nestedCondition();
 

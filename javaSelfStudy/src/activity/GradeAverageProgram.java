@@ -82,6 +82,29 @@ public class GradeAverageProgram {
         return this.average; // final answer
     }
 
+    float checkStatus() {
+
+        {
+            if (this.average > 100) { // Above
+                System.out.println("Invalid Grades");
+
+            } else if (this.average >= 98 && average <= 100) {
+                System.out.println("With Highest Honors");
+
+            } else if (this.average >= 95 && average <= 97.99f) {
+                System.out.println("With Highest Honors");
+
+            } else if (this.average >= 90 && average <= 94.99f) {
+                System.out.println("PASSED");
+            } else {
+                System.out.println("Failed");
+            }
+        }
+
+        return this.average;
+
+    }
+
     public void mainOutput() {
 
         System.out.println("-----------------------------------");
@@ -115,6 +138,8 @@ public class GradeAverageProgram {
         in.finalAverage();
 
         in.mainOutput();
+
+        in.checkStatus();
     }
 
 }

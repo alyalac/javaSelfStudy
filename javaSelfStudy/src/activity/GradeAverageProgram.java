@@ -1,3 +1,7 @@
+// I struggled here with arrays and loops,
+// but I know the basics — not yet fully mastered.
+// It's okay, allowing yourself to be a beginner is fine.
+
 package activity;
 
 import java.util.Scanner;
@@ -11,11 +15,11 @@ public class GradeAverageProgram {
     int math;
     int science;
     int computer;
-    int average;
+    float average;
 
     // Constructor
     public GradeAverageProgram(String studentName, int studentid, int english, int math, int science, int computer,
-            int average) {
+            float average) {
 
         this.studentName = studentName;
 
@@ -51,16 +55,30 @@ public class GradeAverageProgram {
 
     }
 
-    public int finalAverage() {
-        int[] grades = { this.english, this.math, this.science, this.computer };
-        int total = 0;
+    public float finalAverage() {
 
+        // Store all grades in an array so we can loop through them easily
+        // ex: english=90, math=85, science=88, computer=92
+        int[] grades = { this.english, this.math, this.science, this.computer };
+
+        // This will hold the sum of all grades, starts at 0
+        // ex: total = 90 + 85 + 88 + 92 = 355
+        int total = 0; // same as: total = total + grade
+
+        // Loop through each grade and add it to total
         for (int grade : grades) {
             total += grade;
 
         }
 
-        this.average = total / grades.length;
+        // grades.length = 4 (auto-counts how many items in the array)
+        // (float) 355 / 4 = 88.75
+        // (float) → tells Java to treat the division as float
+        // because int / int = int (no decimal)
+        // but float / int = float (with decimal!)
+        this.average = (float) total / grades.length;
+
+        this.average = (float) total / grades.length;
         return this.average; // final answer
     }
 

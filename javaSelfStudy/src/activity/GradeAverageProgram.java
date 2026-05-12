@@ -85,23 +85,29 @@ public class GradeAverageProgram {
     float checkStatus() {
 
         {
-            if (this.average > 100) { // Above
+            if (this.average > 100) { // Above, If the average is more than 100, it is not a valid grade
                 System.out.println("Invalid Grades");
 
-            } else if (this.average >= 98 && average <= 100) {
+            } else if (this.average >= 98 && average <= 100) { // If the average is 98 or more, AND 100 or less, it
+                                                               // falls in this range
+
                 System.out.println("With Highest Honors");
 
-            } else if (this.average >= 95 && average <= 97.99f) {
-                System.out.println("With Highest Honors");
+            } else if (this.average >= 95 && average <= 97.99f) { // If the average is 95 or more, AND 97.99 or less, it
+                                                                  // falls in this range (f means it is a decimal
+                                                                  // number)
+                System.out.println("With Honors");
+                System.out.println("With High Honors");
 
-            } else if (this.average >= 90 && average <= 94.99f) {
+            } else if (this.average >= 90 && average <= 94.99f) { // If the average is 90 or more, AND 94.99 or less, it
+                                                                  // falls in this range
                 System.out.println("PASSED");
             } else {
                 System.out.println("Failed");
             }
         }
 
-        return this.average;
+        return this.average; // Send back the average value so it can be used outside this method
 
     }
 
@@ -131,15 +137,16 @@ public class GradeAverageProgram {
 
     public static void main(String[] args) {
 
+        // Create a new student with default values (no name yet, all grades are 0)
         GradeAverageProgram in = new GradeAverageProgram("Unknown", 0, 0, 0, 0, 0, 0);
 
-        in.inputInfo();
+        in.inputInfo(); // Ask the user to type in the student name and grades
 
-        in.finalAverage();
+        in.finalAverage(); // Calculate the average based on the grades that were entered
 
-        in.mainOutput();
+        in.mainOutput(); // Show the student name, grades, and average on the screen
 
-        in.checkStatus();
+        in.checkStatus(); // Check the average and show if the student Passed, Failed, or got Honors
     }
 
 }

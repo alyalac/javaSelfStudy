@@ -2,6 +2,11 @@
 // but I know the basics — not yet fully mastered.
 // It's okay, allowing yourself to be a beginner is fine.
 
+// TODO: Learn private attributes — right now grades can be accessed and changed directly from outside the class
+// TODO: Learn getter and setter — the proper way to read and update private attributes
+// TODO: Learn input validation — handle cases where the user types an invalid grade like -10 or 200
+// TODO: Learn Scanner handling — understand sc.close() and the nextLine() bug that happens after nextInt()
+
 package activity;
 
 import java.util.Scanner;
@@ -53,6 +58,8 @@ public class GradeAverageProgram {
         System.out.print("Computer: ");
         this.computer = sc.nextInt();
 
+        sc.close();
+
     }
 
     public float finalAverage() {
@@ -76,7 +83,6 @@ public class GradeAverageProgram {
         // (float) → tells Java to treat the division as float
         // because int / int = int (no decimal)
         // but float / int = float (with decimal!)
-        this.average = (float) total / grades.length;
 
         this.average = (float) total / grades.length;
         return this.average; // final answer
@@ -95,11 +101,11 @@ public class GradeAverageProgram {
                 // If the average is 95 or more, AND 97.99 or less, it falls in this range (f
                 // means it is a decimal number)
             } else if (this.average >= 95 && average <= 97.99f) {
-                System.out.println("With Honors");
+                System.out.println("With High Honors");
 
                 // If the average is 90 or more, AND 94.99 or less, it falls in this range
             } else if (this.average >= 90 && average <= 94.99f) {
-                System.out.println("PASSED");
+                System.out.println("With Honors");
 
             } else {
                 System.out.println("Failed");

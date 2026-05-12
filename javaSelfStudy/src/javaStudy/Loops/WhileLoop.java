@@ -50,8 +50,8 @@ public class WhileLoop {
 
     public static void main(String[] args) {
 
-        // countDown();
-        // falseCondition();
+        countDown();
+        falseCondition();
         experimentWhileAndCondition();
 
     }

@@ -1,11 +1,10 @@
 package javaStudy.loops;
 
 // int 1 = 0, start at 0
-
 // i < 5, keep going while i less than 5
 // i++ , add 1 to  i every time
 // i, is just variable name
-
+//For loop — runs a block of code a set number of times
 public class FoorLoop {
 
     public static void countDown() {

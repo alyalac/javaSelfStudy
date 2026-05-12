@@ -37,6 +37,7 @@ public class ConditionalStatements {
     } else {
       System.out.println("OH noo!!");
     }
+    sc.close();
 
   }
 
@@ -57,7 +58,7 @@ public class ConditionalStatements {
         System.out.println("Not Qualified");
       }
     }
-
+    sc.close();
   }
 
   public static void ifElse() { // if-else if-else Statement
@@ -74,6 +75,7 @@ public class ConditionalStatements {
     } else {
       System.out.println("Access Denied!");
     }
+    sc.close();
   }
 
   public static void booleanIfElse() { // else if
@@ -106,7 +108,7 @@ public class ConditionalStatements {
     } else {
       System.out.println("Out");
     }
-
+    sc.close();
   }
 
   public static void main(String[] args) {

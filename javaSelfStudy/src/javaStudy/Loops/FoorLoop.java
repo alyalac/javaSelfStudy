@@ -1,4 +1,4 @@
-package javaStudy.loops;
+package javaStudy.Loops;
 
 // int 1 = 0, start at 0
 // i < 5, keep going while i less than 5

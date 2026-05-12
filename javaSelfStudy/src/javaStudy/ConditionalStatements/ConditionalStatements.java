@@ -5,7 +5,7 @@
 // >= (Greater than or equal to) -> 10 >= 10 (True), 11 >= 10 (True), 9 >= 10 (False)
 // <= (Less than or equal to) -> 5 <= 5 (True), 4 <= 5 (True), 6 <= 5 (False)
 
-package javaStudy;
+package javaStudy.ConditionalStatements;
 
 import java.util.Scanner;
 

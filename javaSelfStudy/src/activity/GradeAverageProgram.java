@@ -88,20 +88,19 @@ public class GradeAverageProgram {
             if (this.average > 100) { // Above, If the average is more than 100, it is not a valid grade
                 System.out.println("Invalid Grades");
 
-            } else if (this.average >= 98 && average <= 100) { // If the average is 98 or more, AND 100 or less, it
-                                                               // falls in this range
-
+                // If the average is 98 or more, AND 100 or less, it falls in this range
+            } else if (this.average >= 98 && average <= 100) {
                 System.out.println("With Highest Honors");
 
-            } else if (this.average >= 95 && average <= 97.99f) { // If the average is 95 or more, AND 97.99 or less, it
-                                                                  // falls in this range (f means it is a decimal
-                                                                  // number)
+                // If the average is 95 or more, AND 97.99 or less, it falls in this range (f
+                // means it is a decimal number)
+            } else if (this.average >= 95 && average <= 97.99f) {
                 System.out.println("With Honors");
-                System.out.println("With High Honors");
 
-            } else if (this.average >= 90 && average <= 94.99f) { // If the average is 90 or more, AND 94.99 or less, it
-                                                                  // falls in this range
+                // If the average is 90 or more, AND 94.99 or less, it falls in this range
+            } else if (this.average >= 90 && average <= 94.99f) {
                 System.out.println("PASSED");
+
             } else {
                 System.out.println("Failed");
             }

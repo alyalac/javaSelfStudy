@@ -6,10 +6,11 @@ package javaStudy.Loops;
 public class WhileLoop {
 
     public static void countDown() {
-        int countdown = 10;
-        while (countdown > 0) {
+        int countdown = 10; // start — before the loop
+        while (countdown > 0) { // condition
+
             System.out.println("I LOVE YOU: " + countdown);
-            countdown--;
+            countdown--; // STEP — inside the loop
 
         }
 
@@ -27,10 +28,32 @@ public class WhileLoop {
 
     }
 
+    public static void experimentWhileAndCondition() {
+
+        int numbers = 0;
+
+        while (numbers <= 11) {
+
+            if (numbers >= 1 && numbers <= 4) {
+                System.out.println(numbers + " - Low");
+
+            } else if (numbers >= 5 && numbers <= 10) {
+                System.out.println(numbers + " - High");
+            } else if (numbers >= 11) {
+                System.out.println(numbers + " - TO MUCH");
+            }
+            numbers++;
+
+        }
+
+    }
+
     public static void main(String[] args) {
 
         // countDown();
-        falseCondition();
+        // falseCondition();
+        experimentWhileAndCondition();
+
     }
 
 }

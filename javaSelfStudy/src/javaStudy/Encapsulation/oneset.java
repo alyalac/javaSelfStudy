@@ -2,52 +2,55 @@ package javaStudy.Encapsulation;
 
 public class oneset {
 
-    private String name;
-    private int age;
+    private String name; // Always dapat sa isang attributes may set and get
+    private int age; // dito rin kaya dapat 4
 
-    public oneset(String name, int age) {
+    // hindi na kasi nag add ng contructor kasi may build-in na sa set and get na
+    // nilagay ko
 
-        this.name = name;
-        this.age = age;
-    }
-
-    // setter
+    // setter ng name;
     void nameSet(String name) {
 
         this.name = name;
 
     }
 
-    // getter
+    // getter ng name; always tandaan na walang parameters ang get
     String nameGet() {
 
         return this.name = name;
     }
 
-    // setter
+    // setter ng age
     void setAge(int age) {
 
         this.age = age;
     }
 
-    // getter
-    int setAge() {
+    // getter ng Age
+    int getAge() {
 
         return this.age = age;
     }
 
-    void mainOutput() {
+    public static void mainOutput(oneset out) {
 
-        System.out.println("Name: " + this.name);
-        System.out.println("Age: " + this.age);
+        System.out.println("Name: " + out.nameGet());
+        System.out.println("Age: " + out.getAge());
 
     }
 
-    public static void main() {
+    public static void main(String[] args) {
 
-        oneset fs = new oneset("Andrei", 0);
+        oneset out = new oneset(); // Object
 
-        fs.mainOutput();
+        // set and get ng Age
+
+        out.nameSet("Andrei"); // set
+
+        out.setAge(22);
+
+        mainOutput(out);
 
     }
 

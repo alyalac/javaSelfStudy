@@ -46,16 +46,21 @@ public class Grades {
     }
 
     float computeAverage() { // return type is float
-        int[] hold = { this.english, this.math, this.filipino, this.tle, this.makabayan };
+        int[] hold = { this.english, this.math, this.filipino, this.tle, this.makabayan }; // 5
         int total = 0;
+
+        // : - in, grade IN hold
         for (int grade : hold) {
-            total += grade; // add each grade to total
-        } // close for loop here
-        this.grades = (float) total / hold.length; // compute average
+            total += grade;
+            // total = total + grade
+
+        }
+        this.grades = (float) total / hold.length; // compute average. example 433 / 5 = 86.6
+        // grades
 
         System.out.println("Grades: " + grades);
 
-        return this.grades; // send back the average
+        return this.grades; // send back the grades
     }
 
     public static void main(String[] args) {

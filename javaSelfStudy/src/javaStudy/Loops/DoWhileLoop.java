@@ -2,7 +2,7 @@
 //While: After the block finishes, the program evaluates a boolean condition
 //Repeat or Exit: if the condition is true, it jumps back to the do. if false, it moves on.
 
-package javaStudy.Loops.practice;
+package javaStudy.Loops;
 
 public class DoWhileLoop {
 

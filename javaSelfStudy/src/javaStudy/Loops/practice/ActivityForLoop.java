@@ -31,7 +31,7 @@ public class ActivityForLoop {
 
         int sum = 0;
         for (int count = 1; count <= 100; count++) {
-            sum = sum + count;
+            sum += count;// sum = sum + count
 
         }
         System.out.println("Sum" + sum);
